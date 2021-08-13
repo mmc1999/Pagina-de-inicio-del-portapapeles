@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [](https://jovial-kepler-0c6112.netlify.app/)
+- Live Site URL: ![](https://jovial-kepler-0c6112.netlify.app/)
 
 ## My process
 
