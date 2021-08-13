@@ -1,0 +1,245 @@
+html {
+    box-sizing: border-box;
+    font-size: 18px;
+    margin: 0%;
+    padding: 0%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    outline: none;
+}
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    background-color: rgb(253, 253, 253);
+    background-image: url('../images/bg-header-mobile.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left 0vw top 0vh;
+    text-align: center;
+    margin: 0px 0px;
+} 
+header, main {
+    margin: 0px 30px;
+}
+.header {
+    margin-top: 150px;
+}
+.header-nav-imagen {
+    margin-bottom: 70px;
+    width: 150px;
+}
+h2 {
+    font-size: 2rem;
+    opacity: 0.8;
+}
+h3 {
+    font-size: 1.7rem;
+    opacity: 0.8;
+}
+.divBoton {
+    display: flex;
+    flex-direction: column;
+}
+.boton {
+    cursor: pointer;
+    height: 3rem;
+    margin: 15px 0px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border: none;
+    letter-spacing: 3px;
+    color: rgba(255, 255, 255,0.9);
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+.iOS {
+    background-color: hsl(171, 66%, 44%);
+    box-shadow: 0px 2px 10px 1px hsl(171, 44%, 74%);
+}
+.Mac {
+    background-color: hsl(233, 100%, 69%);
+    box-shadow: 0px 2px 10px 0px hsl(234, 56%, 71%);
+}
+.boton:active {
+    height: 2.8rem;
+}
+p {
+    font-size: 1.2rem;
+    opacity: 0.5;
+    line-height: 1.8rem;
+}
+.imagenPCcelu {
+    max-width: 100%;
+    margin: 50px 0px;
+}
+.iconosPiolas {
+    margin: 40px 0px;
+    width: 60px;
+}
+.main-headerDeVuelta, .main-empresas, .main-celuTabletCarac, .main-celuTabletCarac, .header-nav-section {
+    margin: 200px 0px;
+}
+.mainSectionDiv {
+    margin: 100px 0px;
+}
+.main-empresas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+}
+.logos {
+    margin: 40px 0px;
+    width: 120px;
+}
+
+/* ----------------  FOOTER       ----------------------------*/
+footer {
+    background-color: hsl(0, 0%, 94%);
+    margin: 0%;
+    padding: 0%;
+}
+.footer-opciones {
+    margin: 50px 0px;
+    font-size: 2rem;
+}
+a {
+    text-decoration: none;
+    color: hsl(0, 0%, 0%);
+}
+a p {
+    font-weight: 600;
+}
+.logoEmpresa {
+    width: 70px;
+    margin: 50px 0px;
+}
+.logoRedes {
+    margin: 0px 20px;
+    width: 35px;
+}
+.attribution { 
+    font-size: 0.9rem;
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+
+/*---------------------------------------- DISEÑO PARA PC-----------------------------------------*/
+
+@media (min-width:1150px) {
+    .header-nav-section-p {
+        margin: 50px 20%;
+    }
+    .divBoton {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .boton {
+        margin: 0px 20px;
+        font-size: 0.7rem;
+        width: 230px;
+    }
+    .main-computadoraCaracDiv {
+        font-size: 0.5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 50px 130px 130px 130px 130px;
+        grid-gap: 10px 0px;
+        grid-template-areas: 
+        "izquierda ."
+        "izquierda derecha1"
+        "izquierda derecha2"
+        "izquierda derecha3"
+        "izquierda ."
+        ;
+    }
+    .imagenPCcelu {
+        grid-area: izquierda;
+        width: 100%;
+        margin-left: -100px;
+    }
+    .main-computadoraCaracDivDiv {
+        grid-area: derecha1;
+    }
+    .main-computadoraCaracDivDiv2 {
+        grid-area: derecha2;
+    }
+    .main-computadoraCaracDivDiv3 {
+        grid-area: derecha3;
+    }
+
+    .main-computadoraCaracDiv h3 {
+        font-size: 1rem;
+    }
+    .main-computadoraCaracDiv p {
+        font-size: 0.8rem;
+    }
+
+    .main-headerDeVuelta, .main-empresas, .main-celuTabletCarac, .main-celuTabletCarac, .header-nav-section {
+        margin: 180px 0px;
+    }
+    .imagenPCcelu {
+        width: 90%;
+    }
+    .mainSectionDiv {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .mainSectionDivDiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+    }
+    .mainSectionDivDiv img {
+        align-self: center;
+    }
+    .main-empresas {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .logos {
+        max-width: 100%;
+        margin: 0px 50px;
+    }
+    
+    .footer-opciones {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 100px 100px;
+        grid-template-areas:
+        "logo a a a"
+        "logo a a a" 
+        ;
+        align-items: center;
+        margin: 0%;
+    }
+    .logoEmpresa {
+        grid-area: logo;
+        align-self: flex-start;
+    }
+    .footer-opciones a p {
+        margin: 0px 20px;
+    }
+    .footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+}
